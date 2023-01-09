@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+</head>
+<body>
+        
+<!-- javascript     -->
+<script>
+
+var fName = prompt("input your Name ?");
+var urdu = +prompt("Type your urdu obtain marks");
+var english = +prompt("Type your english obtain marks");
+var islamiat = +prompt("Type your islamiat obtain marks");
+var scince = +prompt("Type your science obtain marks");
+var pst = +prompt("Type your pst obtain marks");
+var gradeString = "your Grade is";
+var obtainTotal = urdu + english + islamiat + scince + pst;
+var perc = (obtainTotal / 500) * 100;
+var msg=" ";
+
+if(perc >=80 && perc <= 90){
+    msg= msg + fName +" " + gradeString + " " +"A+";
+}else if (perc >=70 && perc < 80){
+    msg= msg+fName +" " + gradeString + " " +"A";
+}else if (perc >=60 && perc < 70){
+    msg= msg + fName +" " + gradeString + " " +"B";
+}else if (perc >=50 && perc < 60){
+    msg= msg + fName +" " + gradeString + " " +"A+";
+}else{
+    msg= msg + fName + " You Are Fail";
+}
+
+
+document.write
+("<div class='container'>"+
+    "<div class='row' " +
+    "<div class='col-12'>"+
+    "<table  class='abc table table-primary' border='1'>"
+        +"<tr class='table-dark'>" +"<td scope='col' class='fw-bold'>"+ "Your Name"+"</td>"+"<td class='fw-bold'>"+fName +"</td>"+ "</tr>"
+        +"<tr class='table-secondary'>" +"<td scope='col' class='fw-bold'>"+ "URDU"+"</td>"+"<td class='fw-bold'>"+ urdu+"</td>"+ "</tr>"
+        +"<tr class='table-success'>" +"<td scope='col' class='fw-bold'>"+ "ENGLISH"+"</td>"+"<td class='fw-bold'>"+ english+"</td>"+ "</tr>"
+        +"<tr class='table-danger'>" +"<td scope='col' class='fw-bold'>"+ "ISLAMIAT"+"</td>"+"<td class='fw-bold'>"+ islamiat+"</td>"+ "</tr>"
+        +"<tr class='table-warning'>" +"<td scope='col' class='fw-bold'>"+ "SCINCE"+"</td>"+"<td class='fw-bold'>"+ scince+"</td>"+ "</tr>"
+        +"<tr class='table-info'>" +"<td scope='col' class='fw-bold'>"+ "PST"+"</td>"+"<td class='fw-bold'>"+ pst+"</td>"+ "</tr>"
+        +"<tr class='table-primary'>" +"<td scope='col' class='fw-bold'>"+ "TOTAL Obtain Marks"+"</td>"+"<td class='fw-bold'>"+ obtainTotal+"</td>"+ "</tr>"
+        +"<tr class='table-secondary'>" +"<td scope='col' class='fw-bold'>"+ "Percentage"+"</td>"+"<td class='fw-bold'>"+ perc+"%"+"</td>"+ "</tr>"
+        +"<tr class='table-secondary'>" +"<td scope='col' class='fw-bold '>"+ "Result"+"</td>"+"<td class='fw-bold'>"+ msg+"</td>"+ "</tr>"
+        +
+ "</table>"+
+"</div>"+
+"</div>"+
+ "</div>")
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+</html>
